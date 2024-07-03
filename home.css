@@ -1,0 +1,674 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --navbar-height: 50px
+}
+/*Menu Bar at the top*/
+#logo {
+    margin: 15px 40px;
+}
+
+#logo img {
+    margin: 9px 11px;
+    height: 80px;
+    width: 120px;
+}
+
+#navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(28, 11, 75);
+    display: block;
+    padding: 23px 70px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+#navbar ul li button{
+    position: absolute;
+    right: 0px;
+    font-size: 1.4rem;
+}
+
+/*Home at the top*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 725px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/bckImage2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.8; */
+    top: 0px;
+    left: 0px;
+}
+
+.h-primary {
+    padding: 12px;
+    font-size: 6.2rem;
+    font-family: "Kanit", sans-serif;
+    /* color: white; */
+    /* text-align: center; */
+}
+
+#home h3{
+    font-size: 2.2rem;
+    text-align: center;
+    color: white;
+    font-family: "Merriweather", serif;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.btn{
+    padding: 8px 25px;
+    border: 2px solid black;
+    background-color: orangered;
+    color: white;
+    margin: 27px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    /* background-color: rgb(69, 9, 9); */
+    transition: all 0.2s ease-in;
+    background-color: brown;
+}
+
+/*About the Property*/
+#about h6{
+    font-size: 1.6rem;
+    position: relative;
+    margin-top: 30px;
+    font-family: "Kanit", sans-serif;
+    text-decoration: underline;
+    left: 30px;
+}
+
+#about h1{
+    font-size: 4.8rem;
+    margin-top: 20px;
+    font-family: "Merriweather", serif;
+}
+
+#about .btn{
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 13px;
+    padding: 9px 26px;
+    margin-top: 140px;
+    font-size: 1.6rem;
+    right: 50px;
+} 
+
+#about{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 50%;
+}
+
+/*Detail Overview of Properties*/
+#about1{
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    width: 40%;
+    /* border: 2px solid black; */
+}
+
+#about1 .image-section{
+    position: relative;
+    left: 150px;
+    z-index: -1;
+}
+
+#about1 .image-section img{
+    height: 600px;
+}
+
+#about1 .para{
+    right: 0px;
+    position: absolute;
+    width: 60%;
+    font-size: 1.8rem;
+    font-family: "Kanit", sans-serif;
+}
+
+.box{
+    height: 45%;
+    width: 70%;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0px;
+    margin-top: 350px;
+    z-index: -1;
+}
+
+/*Opportunity Section*/
+#option h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+    text-decoration: underline;
+}
+
+#sec-background{
+    width: 100%;
+    height: 110vh;
+    margin-top: 90px;
+    background-color: rgb(228, 219, 208);
+    z-index: -1;
+}
+
+#overview{
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    width: 150%;
+    /* border: 2px solid black; */
+}
+
+#overview .image-section{
+    position: absolute;
+    right: 150px;
+    /* z-index: -1; */
+    margin-top: 50px;
+}
+
+#overview .image-section .box-demo{
+    border: 2px solid black;
+    background-color: grey;
+    /* z-index: -1; */
+    height: 650px;
+    width: 500px;
+}
+
+#overview .para{
+    left: 20px;
+    margin-top: 50px;
+    position: relative;
+    width: 30%;
+    /* font-size: 1.8rem;
+    font-family: "Kanit", sans-serif; */
+}
+
+#overview .para p{
+    color: orange;
+    font-size: 1.2rem;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+#overview .para h1{
+    color: black;
+    font-size: 3.6rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#overview .para h3{
+    color: black;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 150px;
+    margin-top: 100px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;   
+    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    margin-left: 60px;
+}
+
+#overview .para .item{
+    /* background-color: tomato;
+    border: 2px solid green; */
+    margin: 10px;
+    padding: 3px;
+    height: 130px;
+    width: 130px;
+}
+
+#overview .para .container img{
+    height: 100px;
+    width: 100px;
+}
+
+#overview .para .container p{
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#overview .para .btn{
+    margin-left: 50px;
+    margin-top: 70px;
+    font-size: 1.6rem;
+}
+
+#overview3BHK{
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    width: 60%;
+    /* border: 2px solid black; */
+}
+
+#overview3BHK .image-section{
+    position: relative;
+    left: 150px;
+    /* z-index: -1; */
+    margin-top: 50px;
+    z-index: -1;
+}
+
+#overview3BHK .image-section .box-demo{
+    border: 2px solid black;
+    background-color: grey;
+    /* z-index: -1; */
+    height: 650px;
+    width: 500px;
+}
+
+#overview3BHK .para{
+    right: 60px;
+    margin-top: 50px;
+    position: absolute;
+    width: 40%;
+    /* font-size: 1.8rem;
+    font-family: "Kanit", sans-serif; */
+}
+
+#overview3BHK .para p{
+    color: orange;
+    font-size: 1.2rem;
+    font-family: "Kanit", sans-serif;
+    
+}
+
+#overview3BHK .para h1{
+    color: black;
+    font-size: 3.6rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#overview3BHK .para h3{
+    color: black;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 150px;
+    margin-top: 100px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;   
+    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    margin-left: 60px;
+}
+
+#overview3BHK .para .item{
+    /* background-color: tomato;
+    border: 2px solid green; */
+    margin: 10px;
+    padding: 3px;
+    height: 130px;
+    width: 130px;
+}
+
+#overview3BHK .para .container img{
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+}
+
+#overview3BHK .para .container p{
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#overview3BHK .para .btn{
+    margin-left: 50px;
+    margin-top: 70px;
+    font-size: 1.6rem;
+}
+
+/*Amenities*/
+#amenity h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+    text-decoration: underline;
+}
+
+#amenity .container{
+        height: 150px;
+        margin-top: 100px;
+        width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: row;    
+        flex-wrap: wrap;   
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        margin-left: 20px;
+}
+
+#amenity .container .item{
+    margin: 10px;
+    padding: 3px;
+    height: 190px;
+    width: 190px;
+    background-color: bisque;
+    border-top-right-radius: 20px;
+}
+
+#amenity .container img{
+    height: 120px;
+    width: 120px;
+    margin: 20%;
+}
+
+#amenity .container .item:hover{
+    background-color: orangered;
+}
+
+/*Photo gallery Slides*/
+
+#gallery h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+    text-decoration: underline;
+    margin-top: 140px;
+} 
+
+#gallery-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gallery .gallery-container{
+    position: relative;
+    margin: auto;
+    max-width: 60%;
+    overflow: hidden;
+}
+
+#gallery .gallery-container .slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#gallery .slides .slide{
+    width: 100%;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+#gallery .slides .slide img{
+    width: 100%;
+    display: block;
+}
+
+#gallery .prev , .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#gallery .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#gallery .prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#gallery .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* #contact .image img{
+    height: 600px;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+} */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 725px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+#contact .h-primary{
+    font-size: 3.9rem;
+    color: rgb(62, 3, 3);
+}
+
+#contact .h-secondary{
+    font-size: 3.7rem;
+    color:rgb(62, 3, 3);
+}
+
+#contact .h-secondary:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(37, 8, 65);
+}
+
+#foot  .left h1{
+    color: white;
+    font-size: 2.1rem;
+    margin-top: 80px;
+    margin-left: 70px;
+    position: absolute;
+    font-family: monospace;
+}
+
+#foot .left h2{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 70px; 
+    font-family: monospace; 
+}
+
+#foot .left .call{
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 70px;
+    font-family: monospace; 
+}
+
+#foot .left h3{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 70px;
+    font-family: monospace; 
+}
+
+#foot .left .number{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 70px;
+    font-family: monospace; 
+}
+
+#foot .middle h1{
+    color: white;
+    font-size: 2.1rem;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 40%;
+}
+
+#foot .middle h3{
+    color: white;
+    font-size: 1.3rem;
+    font-family: monospace; 
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 140px;
+}
+
+#foot .middle .second{
+    position: absolute;
+    margin-top: 170px;
+}
+
+#foot .middle .third{
+    position: absolute;
+    margin-top: 200px;
+}
+
+#foot .enquiry-form .boxes{
+    height: 500px;
+    width: 30%;
+    background-color: rgb(21, 4, 36);
+    position: absolute;
+    right: 0;
+}
+
+#foot .enquiry-form .boxes h1{
+    color: white;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 40px;
+    text-decoration: underline;
+}
+
+#foot .enquiry-form .name{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 70px;
+    font-size: 1.9rem;
+}
+
+#foot .enquiry-form .email{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 70px;
+    font-size: 1.9rem;
+}
+
+#foot .enquiry-form .phone_no{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 70px;
+    font-size: 1.9rem;
+}
+
+#foot .enquiry-form .btn{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 80px;
+}
